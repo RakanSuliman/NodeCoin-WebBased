@@ -2,12 +2,12 @@
 
 A modern web-based cryptocurrency simulator based on custom data structures. This project is the web implementation of the NodeCoin-Python project, demonstrating how doubly linked lists, heaps, and nodes can be used to create a simplified cryptocurrency system for learning purposes.
 
-![NodeCoin Web Screenshot](./public/screenshot.png)
+![NodeCoin Web Screenshot](public/screenshot.PNG)
 
 ## 🚀 Features
 
 - **Efficient Data Structure**: Combines linked lists and max heaps to handle cryptocurrency transactions
-- **Modern UI/UX**: Built with React and Tailwind CSS for a responsive pixel-style interface
+- **Modern UI/UX**: Built with React and Tailwind CSS for a responsive interface
 - **Interactive Operations**:
     - 💰 Insert Transaction: Add new transactions to specific dates
     - 📊 Get Maximum Transaction: Quickly fetch the highest value transaction for any date
@@ -91,33 +91,6 @@ A modern web-based cryptocurrency simulator based on custom data structures. Thi
 - **`npm run build`**: Builds the app for production to the `build` folder
 - **`npm run deploy`**: Deploys the app to GitHub Pages (after configuration)
 
-## 🚀 Deployment
-
-### GitHub Pages
-
-1. Add GitHub Pages dependency:
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. Add the following to your `package.json`:
-   ```json
-   "homepage": "https://yourusername.github.io/NodeCoin-WebBased",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
-   }
-   ```
-
-3. Deploy the app:
-   ```bash
-   npm run deploy
-   ```
-
-### Other Deployment Options
-
-- **Netlify**: Connect your GitHub repository or use Netlify CLI
-- **Vercel**: Connect your GitHub repository or use Vercel CLI
 
 ## 📂 Project Structure
 
