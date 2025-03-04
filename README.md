@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# NodeCoin Web Implementation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web-based cryptocurrency simulator based on custom data structures. This project is the web implementation of the NodeCoin-Python project, demonstrating how doubly linked lists, heaps, and nodes can be used to create a simplified cryptocurrency system for learning purposes.
 
-## Available Scripts
+![NodeCoin Web Screenshot](./public/screenshot.png)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Efficient Data Structure**: Combines linked lists and max heaps to handle cryptocurrency transactions
+- **Modern UI/UX**: Built with React and Tailwind CSS for a responsive pixel-style interface
+- **Interactive Operations**:
+    - 💰 Insert Transaction: Add new transactions to specific dates
+    - 📊 Get Maximum Transaction: Quickly fetch the highest value transaction for any date
+    - 🗑️ Remove Maximum Transaction: Remove the highest value transaction from a date
+    - 📋 Get All Transactions: Retrieve and clear all transactions for a specific date
+- **Real-time Visualization**: See the blockchain structure update as you perform operations
+- **Animation Effects**: Visual feedback when interacting with nodes and transactions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Front-end library for building the user interface
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **JavaScript**: Implementation of complex data structures (MaxHeap, Linked List, etc.)
+- **Modern ES6+**: Leveraging current JavaScript features for clean code
 
-### `npm test`
+## 🧩 Core Data Structures
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **MaxHeap**: Manages transactions using a max heap for efficient retrieval of highest values
+- **Node**: Represents each unique date with its transactions
+- **NodeCoin**: Manages all nodes using a doubly linked list structure
+- **Transaction**: Represents individual cryptocurrency transfers
 
-### `npm run build`
+## 📋 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/NodeCoin-WebBased.git
+   cd NodeCoin-WebBased/nodecoin-web
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💻 Usage
 
-## Learn More
+1. **Insert Transaction**:
+    - Select "1 - Insert Transaction" from the operation dropdown
+    - Choose a date from the date picker
+    - Enter a transaction amount
+    - Click "Execute"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Get Maximum Transaction**:
+    - Select "2 - Get Maximum Transaction" from the dropdown
+    - Choose a date
+    - Click "Execute" to see the highest value transaction for that date
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Remove Maximum Transaction**:
+    - Select "3 - Remove Maximum Transaction" from the dropdown
+    - Choose a date
+    - Click "Execute" to remove the highest value transaction
 
-### Code Splitting
+4. **Get All Transactions**:
+    - Select "4 - Get All Transactions" from the dropdown
+    - Choose a date
+    - Click "Execute" to remove and display all transactions for that date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚙️ Available Scripts
 
-### Analyzing the Bundle Size
+- **`npm start`**: Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
+- **`npm test`**: Launches the test runner in interactive watch mode
+- **`npm run build`**: Builds the app for production to the `build` folder
+- **`npm run deploy`**: Deploys the app to GitHub Pages (after configuration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Deployment
 
-### Making a Progressive Web App
+### GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Add GitHub Pages dependency:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
 
-### Advanced Configuration
+2. Add the following to your `package.json`:
+   ```json
+   "homepage": "https://yourusername.github.io/NodeCoin-WebBased",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Deploy the app:
+   ```bash
+   npm run deploy
+   ```
 
-### Deployment
+### Other Deployment Options
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Netlify**: Connect your GitHub repository or use Netlify CLI
+- **Vercel**: Connect your GitHub repository or use Vercel CLI
 
-### `npm run build` fails to minify
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+nodecoin-web/
+├── public/              # Static files
+├── src/
+│   ├── components/      # React components
+│   ├── lib/             # Core implementation
+│   │   ├── models/      # Data structure classes
+│   │   └── utils/       # Utility functions
+│   ├── App.jsx          # Main application component
+│   └── index.js         # Application entry point
+├── package.json         # Dependencies and scripts
+└── tailwind.config.js   # Tailwind CSS configuration
+```
+
+## 🙏 Acknowledgments
+
+- **Dr. Basit Qureshi**: For guiding and teaching data structures in the CS210 course
+- The original NodeCoin-Python project which served as the foundation for this implementation
+- React and Tailwind CSS communities for their excellent documentation and tools
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
