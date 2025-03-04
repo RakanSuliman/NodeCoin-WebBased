@@ -41,7 +41,7 @@ A modern web-based cryptocurrency simulator based on custom data structures. Thi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/NodeCoin-WebBased.git
+   git clone https://github.com/RakanSuliman/NodeCoin-WebBased.git
    cd NodeCoin-WebBased/nodecoin-web
    ```
 
